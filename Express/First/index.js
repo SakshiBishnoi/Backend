@@ -12,7 +12,7 @@ app.get('/cookies', (req, res) => {
     res.send('Cookie');
 });
 app.get('/cats', (req, res) => {
-    console.log('cookies request!!!');
+    console.log('cats request!!!');
     res.send('Cats');
 });
 
