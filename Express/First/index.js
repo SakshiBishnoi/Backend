@@ -1,7 +1,8 @@
 const express =  require('express');
 const app =  express();
-app.use( () => {
+app.use((req,res) => {
     console.log("We have a new request!");
+    res.send("Hello we got a request, this a response!")
 })
 
 app.listen(3000,() => {
