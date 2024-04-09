@@ -10,7 +10,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/rand', (req, res) => {
-    res.render('random');
+    const num = Math.floor(Math.random() * 100) + 5;
+    res.render('random', {num});
 });
 
 app.listen(3000, () => {
