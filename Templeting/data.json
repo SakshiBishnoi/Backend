@@ -1,0 +1,63 @@
+{
+    "soccer": {
+        "name": "Soccer",
+        "subscribers": "800000",
+        "description": "The football subreddit. News, results and discussion and it was not good at all",
+        "posts": [
+            {
+                "title": "What is the best soccer team in the world?",     
+                "author": "joeextreme"
+            },
+            {
+                "title": "Stephan Lichtsteiner has retired from professional", 
+                "author": "odd person" 
+            },
+            {
+                "title": "OFFICIAL: Dani Parejo signs for Villareal.",
+                "author": "joeextreme"   
+            }
+        ]
+    },
+    "sakshi": {
+        "name": "Sakshi",
+        "subscribers": "5000",
+        "description": "The football subreddit. News, results and discussion and it was not good at all",
+        "posts": [
+            {
+                "title": "What is the best soccer team in the world?",     
+                "author": "joeextreme"
+            },
+            {
+                "title": "Stephan Lichtsteiner has retired from professional", 
+                "author": "odd person",
+                "img": "https://images.pexels.com/photos/19718653/pexels-photo-19718653/free-photo-of-young-woman-in-a-dress-sitting-on-a-rooftop-terrace-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+
+            },
+            {
+                "title": "OFFICIAL: Dani Parejo signs for Villareal.",
+                "author": "joeextreme"   
+            }
+        ]
+    },
+    "cookies": {
+        "name": "Cookies",
+        "subscribers": "1000000",
+        "description": "The football subreddit. News, results and discussion and it was not good at all",
+        "posts": [
+            {
+                "title": "What is the best soccer team in the world?",     
+                "author": "joeextreme",
+                "img": "https://images.pexels.com/photos/6061892/pexels-photo-6061892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            },
+            {
+                "title": "Stephan Lichtsteiner has retired from professional", 
+                "author": "odd person" 
+            },
+            {
+                "title": "OFFICIAL: Dani Parejo signs for Villareal.",
+                "author": "joeextreme",
+                "img": "https://images.pexels.com/photos/6061393/pexels-photo-6061393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"           
+            }
+        ]
+    }
+}
