@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/rand', (req, res) => {
+    res.render('random');
+});
+
 app.listen(3000, () => {
     console.log('Listening on ports');
 });
