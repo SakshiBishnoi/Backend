@@ -8,6 +8,11 @@ app.get('/', (req, res) => {
     //res.send(`H`)
     res.render('home');
 });
+app.get('/cats', (req, res) => {
+    const cats = ['Blue','Whiskers','Fluffy', 'Snowball', 'Mittens', 'Buddy', 'Cuddles'];
+    res.render( 'cats',{ cats });
+});
+
 app.get('/r/:subreddit', (req, res) => {
     const {subreddit} = req.params;
     res.render('subreddit',{subreddit});
