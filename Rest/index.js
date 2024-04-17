@@ -8,7 +8,8 @@ app.get('/tacos', (req, res)=>{
 })
 app.post('/tacos', (req, res)=>{
     console.log(req.body);
-    res.send(' POST /tacos response')
+    const {food, qty} = req.body;
+    res.send(`Here are your ${qty} ${food}`)
 })
 
 app.listen(3000, () => {
