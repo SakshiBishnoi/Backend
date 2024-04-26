@@ -57,10 +57,10 @@ app.get('/comments/new',(req,res) => {
 app.post('/comments',(req,res) => {
     const {username, comment} = req.body;
     comments.push({username, comment});
-    //res.redirect('/comments');
-    // console.log(req.body);
-    res.send('it worked!');
     
+    // console.log(req.body);
+    //res.send('IT WORKED');
+    res.redirect('/comments');
 })
 
 app.get('/tacos', (req, res)=>{
