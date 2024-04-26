@@ -66,7 +66,7 @@ app.get('/comments/new',(req,res) => {
 })
 app.post('/comments',(req,res) => {
     const {username, comment} = req.body;
-    comments.push({username, comment});
+    comments.push({username, comment, id: uuid()});
     
     // console.log(req.body);
     //res.send('IT WORKED');
@@ -75,7 +75,7 @@ app.post('/comments',(req,res) => {
 
 app.get('/comments/:id',(req,res) => {
     const { id } = req.params
-    const comment = comments.find(c => c.id === parseInt(id))
+    const comment = comments.find(c => c.id === id )
     //console.log(comment);
     res.render('comments/show', {comment})
 })
