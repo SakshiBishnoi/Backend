@@ -51,6 +51,9 @@ const comments = [
 app.get('/comments',(req,res) => {
     res.render('comments/indexC', {comments})
 })
+app.get('/comments/new',(req,res) => {
+    res.render('comments/new', {comments})
+})
 
 app.get('/tacos', (req, res)=>{
     res.send(' GET /tacos response')
