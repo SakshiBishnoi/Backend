@@ -54,6 +54,14 @@ app.get('/comments',(req,res) => {
 app.get('/comments/new',(req,res) => {
     res.render('comments/new', {comments})
 })
+app.post('/comments',(req,res) => {
+    const {username, comment} = req.body;
+    comments.push({username, comment});
+    //res.redirect('/comments');
+    // console.log(req.body);
+    res.send('it worked!');
+    
+})
 
 app.get('/tacos', (req, res)=>{
     res.send(' GET /tacos response')
