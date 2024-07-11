@@ -25,3 +25,14 @@ Show    /comments/:id      GET    - Details for one specific comment
 Edit    /comments/:id/edit GET    - Form to edit specific comment
 Update  /comments/:id      PATCH  - Updates specific comment on server
 Destroy /comments/:id      DELETE - Deletes specific item on server
+
+//This code is defining a route in an Express.js application that handles a PATCH request to update a specific comment. A PATCH request is used to partially update a resource, in this case, a comment.
+//a route refers to a specific URL path that an application responds to. In other words, it's a way to map a URL to a specific handler function that will be executed when a request is made to that URL.
+app.patch('/comments/:id', (req,res) => {
+    //res.send('Updating Something')
+    const { id } = req.params; //contains the route parameters extracted from the URL.
+    //const comment = comments.find(c => c.id === id );
+    // it will iterate through the comments array and check each element's id property against the id parameter passed in the URL. If it finds a match, it will return that comment object and assign it to the comment variable.i
+    console.log(req.body.comment);
+    res.send("all godd");
+})
